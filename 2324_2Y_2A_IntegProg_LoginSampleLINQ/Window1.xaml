@@ -5,8 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_2324_2Y_2A_IntegProg_LoginSampleLINQ"
         mc:Ignorable="d"
-        Title="Window1" Height="450" Width="800" Closed="Window_Closed" Closing="Window_Closing">
+        Title="Window1" Height="359" Width="512">
     <Grid>
-        
+        <Label x:Name="WelcomeMessage" Content="Welcome!" FontSize="30" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Center" Margin="0,64,0,0" VerticalAlignment="Top" Height="58" Width="475"/>
+        <Button x:Name="RegisterBtn" Content="Register" FontSize="16" HorizontalAlignment="Center" Margin="0,211,0,0" VerticalAlignment="Top" Click="RegisterBtn_Click" Width="160" Height="29"/>
+        <Button x:Name="ChangeUNameBtn" Content="Change Username" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Top" Width="160" Height="29" Margin="0,172,0,0" Click="ChangeUNameBtn_Click"/>
+
     </Grid>
 </Window>

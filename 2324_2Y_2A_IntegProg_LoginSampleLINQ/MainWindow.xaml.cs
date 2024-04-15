@@ -21,7 +21,7 @@ namespace _2324_2Y_2A_IntegProg_LoginSampleLINQ
     public partial class MainWindow : Window
     {
         LoginSampleDataContext _lsDC = null;
-        string userName = "";
+        public static string userName = "";
         bool loginFlag = false;
 
         public MainWindow()

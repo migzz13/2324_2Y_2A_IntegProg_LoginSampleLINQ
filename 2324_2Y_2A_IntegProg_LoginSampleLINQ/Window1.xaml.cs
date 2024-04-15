@@ -22,16 +22,20 @@ namespace _2324_2Y_2A_IntegProg_LoginSampleLINQ
         public Window1()
         {
             InitializeComponent();
+            WelcomeMessage.Content = "Welcome " + MainWindow.userName;
+        }
+        private void RegisterBtn_Click(object sender, RoutedEventArgs e)
+        {
+            Register w2 = new Register();
+            w2.Show();
+            this.Close();
         }
 
-        private void Window_Closed(object sender, EventArgs e)
+        private void ChangeUNameBtn_Click(object sender, RoutedEventArgs e)
         {
-        }
-
-        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
-        {
-            MainWindow mw = new MainWindow();
-            mw.Show();
+            ChangeName w3 = new ChangeName();
+            w3.Show();
+            this.Close();
         }
     }
 }
